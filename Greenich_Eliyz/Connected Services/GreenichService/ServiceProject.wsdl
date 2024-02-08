@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="ServiceProject" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/ServiceModel/ServiceProject/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/ServiceModel/ServiceProject/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8733/Design_Time_Addresses/ServiceModel/ServiceProject/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Model" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceProject_SelectAllActivity_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllActivity" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_SelectAllActivity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllActivityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_InsertActivity_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertActivity" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_InsertActivity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertActivityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_UpdateActivity_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateActivity" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_UpdateActivity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateActivityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_DeleteActivity_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteActivity" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_DeleteActivity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteActivityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_SelectAllActivityType_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllActivityType" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_SelectAllActivityType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllActivityTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_InsertActivityType_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertActivityType" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_InsertActivityType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertActivityTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_UpdateActivityType_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateActivityType" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_UpdateActivityType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateActivityTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_DeleteActivityType_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteActivityType" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_DeleteActivityType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteActivityTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_SelectAllCity_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllCity" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_SelectAllCity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllCityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_InsertCity_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCity" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_InsertCity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_UpdateCity_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCity" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_UpdateCity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_DeleteCity_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCity" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_DeleteCity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_SelectAllUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllUser" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_SelectAllUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelectAllUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_IsUsernameFree_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsUsernameFree" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_IsUsernameFree_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsUsernameFreeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_InsertUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUser" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_InsertUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_UpdateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUser" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_UpdateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_DeleteUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUser" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_DeleteUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_OperatorsList_InputMessage">
+    <wsdl:part name="parameters" element="tns:OperatorsList" />
+  </wsdl:message>
+  <wsdl:message name="IServiceProject_OperatorsList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OperatorsListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceProject">
+    <wsdl:operation name="SelectAllActivity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceProject/SelectAllActivity" message="tns:IServiceProject_SelectAllActivity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceProject/SelectAllActivityResponse" message="tns:IServiceProject_SelectAllActivity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertActivity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceProject/InsertActivity" message="tns:IServiceProject_InsertActivity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceProject/InsertActivityResponse" message="tns:IServiceProject_InsertActivity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateActivity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceProject/UpdateActivity" message="tns:IServiceProject_UpdateActivity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceProject/UpdateActivityResponse" message="tns:IServiceProject_UpdateActivity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteActivity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceProject/DeleteActivity" message="tns:IServiceProject_DeleteActivity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceProject/DeleteActivityResponse" message="tns:IServiceProject_DeleteActivity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllActivityType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceProject/SelectAllActivityType" message="tns:IServiceProject_SelectAllActivityType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceProject/SelectAllActivityTypeResponse" message="tns:IServiceProject_SelectAllActivityType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertActivityType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceProject/InsertActivityType" message="tns:IServiceProject_InsertActivityType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceProject/InsertActivityTypeResponse" message="tns:IServiceProject_InsertActivityType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateActivityType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceProject/UpdateActivityType" message="tns:IServiceProject_UpdateActivityType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceProject/UpdateActivityTypeResponse" message="tns:IServiceProject_UpdateActivityType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteActivityType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceProject/DeleteActivityType" message="tns:IServiceProject_DeleteActivityType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceProject/DeleteActivityTypeResponse" message="tns:IServiceProject_DeleteActivityType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllCity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceProject/SelectAllCity" message="tns:IServiceProject_SelectAllCity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceProject/SelectAllCityResponse" message="tns:IServiceProject_SelectAllCity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceProject/InsertCity" message="tns:IServiceProject_InsertCity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceProject/InsertCityResponse" message="tns:IServiceProject_InsertCity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceProject/UpdateCity" message="tns:IServiceProject_UpdateCity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceProject/UpdateCityResponse" message="tns:IServiceProject_UpdateCity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceProject/DeleteCity" message="tns:IServiceProject_DeleteCity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceProject/DeleteCityResponse" message="tns:IServiceProject_DeleteCity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceProject/SelectAllUser" message="tns:IServiceProject_SelectAllUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceProject/SelectAllUserResponse" message="tns:IServiceProject_SelectAllUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsUsernameFree">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceProject/IsUsernameFree" message="tns:IServiceProject_IsUsernameFree_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceProject/IsUsernameFreeResponse" message="tns:IServiceProject_IsUsernameFree_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceProject/InsertUser" message="tns:IServiceProject_InsertUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceProject/InsertUserResponse" message="tns:IServiceProject_InsertUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceProject/UpdateUser" message="tns:IServiceProject_UpdateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceProject/UpdateUserResponse" message="tns:IServiceProject_UpdateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceProject/DeleteUser" message="tns:IServiceProject_DeleteUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceProject/DeleteUserResponse" message="tns:IServiceProject_DeleteUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceProject/Login" message="tns:IServiceProject_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceProject/LoginResponse" message="tns:IServiceProject_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OperatorsList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceProject/OperatorsList" message="tns:IServiceProject_OperatorsList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceProject/OperatorsListResponse" message="tns:IServiceProject_OperatorsList_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceProject" type="tns:IServiceProject">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SelectAllActivity">
+      <soap:operation soapAction="http://tempuri.org/IServiceProject/SelectAllActivity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertActivity">
+      <soap:operation soapAction="http://tempuri.org/IServiceProject/InsertActivity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateActivity">
+      <soap:operation soapAction="http://tempuri.org/IServiceProject/UpdateActivity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteActivity">
+      <soap:operation soapAction="http://tempuri.org/IServiceProject/DeleteActivity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllActivityType">
+      <soap:operation soapAction="http://tempuri.org/IServiceProject/SelectAllActivityType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertActivityType">
+      <soap:operation soapAction="http://tempuri.org/IServiceProject/InsertActivityType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateActivityType">
+      <soap:operation soapAction="http://tempuri.org/IServiceProject/UpdateActivityType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteActivityType">
+      <soap:operation soapAction="http://tempuri.org/IServiceProject/DeleteActivityType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllCity">
+      <soap:operation soapAction="http://tempuri.org/IServiceProject/SelectAllCity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCity">
+      <soap:operation soapAction="http://tempuri.org/IServiceProject/InsertCity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCity">
+      <soap:operation soapAction="http://tempuri.org/IServiceProject/UpdateCity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCity">
+      <soap:operation soapAction="http://tempuri.org/IServiceProject/DeleteCity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelectAllUser">
+      <soap:operation soapAction="http://tempuri.org/IServiceProject/SelectAllUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsUsernameFree">
+      <soap:operation soapAction="http://tempuri.org/IServiceProject/IsUsernameFree" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUser">
+      <soap:operation soapAction="http://tempuri.org/IServiceProject/InsertUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <soap:operation soapAction="http://tempuri.org/IServiceProject/UpdateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <soap:operation soapAction="http://tempuri.org/IServiceProject/DeleteUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/IServiceProject/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OperatorsList">
+      <soap:operation soapAction="http://tempuri.org/IServiceProject/OperatorsList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceProject">
+    <wsdl:port name="BasicHttpBinding_IServiceProject" binding="tns:BasicHttpBinding_IServiceProject">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/ServiceModel/ServiceProject/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
